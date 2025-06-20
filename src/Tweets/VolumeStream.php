@@ -28,7 +28,7 @@ class VolumeStream
      * @return object
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function connectToStream(array $params = null): object
+    public function connectToStream(?array $params = null): object
     {
         $request = new Request($this->credentials);
         return $request->authorisedRequest('GET', $this->uri, $params, null, true);
