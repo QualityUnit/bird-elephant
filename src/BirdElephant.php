@@ -127,7 +127,7 @@ class BirdElephant
         string $http_method,
         string $endpoint,
         array  $params,
-        array  $data = null,
+        ?array  $data = null,
         bool   $stream = false,
         bool   $signed = false
     ): object {
